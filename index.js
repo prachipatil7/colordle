@@ -3,6 +3,8 @@ var g = 0;
 var b = 0;
 var guesses = 0;
 var prev_color = "rgb(242, 242, 242)";
+const green = "rgb(106,170,99)";
+const yellow = "rgb(201,180,88)";
 
 const generateColor = () => {
     r = Math.floor(Math.random() * 255);
@@ -10,7 +12,7 @@ const generateColor = () => {
     b = Math.floor(Math.random() * 255);
 };
 
-const fontColorForBackground = (red, gree, blue) => {
+const fontColorForBackground = (r, g, b) => {
     if ((r*0.299 + g*0.587 + b*0.144) > 186) {
         return "black";
     } else {
@@ -67,11 +69,11 @@ const winScreen = () => {
 
 const checkCorrect = (actual, estimate, color) => {
     if (actual == estimate) {
-        document.getElementById(`${color}-container${guesses}`).style.background = "green";
+        document.getElementById(`${color}-container${guesses}`).style.background = green;
         document.getElementById(`${color}-container${guesses}`).innerHTML = num2Paragraph(estimate, "white");
     } else if (Math.abs(actual-estimate) <= 5) {
-        document.getElementById(`${color}-container${guesses}`).style.background = "yellow"
-        document.getElementById(`${color}-container${guesses}`).innerHTML = num2Paragraph(estimate, "black");
+        document.getElementById(`${color}-container${guesses}`).style.background = yellow;
+        document.getElementById(`${color}-container${guesses}`).innerHTML = num2Paragraph(estimate, "white");
     }
 }
 
