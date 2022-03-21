@@ -1,0 +1,87 @@
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Comfortaa';
+    font-style: bold;
+}
+
+header {
+    padding: 2vh;
+    width: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-container {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+#instructions {
+    padding-left: 5vw;
+    padding-right: 5vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.guess-container {
+    padding-left: 3vw;
+    padding-right: 3vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.guess-container input {
+    background: #f2f2f2;
+    border: hidden 1px #CCC;
+    border-radius: 4px;
+    font-size: 1.0em;
+    font-family: 'Comfortaa';
+    height: 100%;
+}
+
+.guess-container button {
+    background-color: rgb(79, 67, 182);
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 1.3em;
+    font-family: 'Comfortaa';
+    height: 100%;
+}
+
+.guess-container > div {
+    margin: 5px;
+    width: 70px;
+    height: 50px;
+    border: solid 1px rgb(222,222,222);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.colorbox {
+    background-color: white;
+    width: 70px;
+    height: 50px;
+    padding: 5px;
+}
+
+#win-screen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
