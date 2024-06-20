@@ -16,3 +16,5 @@ Once you complete the game, you are left with a lovely gradient to show off all 
 
 #### Ending State:  
 <img width="578" alt="Screen Shot 2024-06-20 at 15 47 34" src="https://github.com/prachipatil7/colordle/assets/62350419/898666e7-842e-449d-a3b0-7c265f079765">
+
+Happy Guessing!
