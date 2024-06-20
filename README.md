@@ -6,6 +6,8 @@ You can try colordle for yourself [here](https://prachipatil7.github.io/colordle
 ### About
 Colordle is based off of the famous word game [Wordle](https://www.nytimes.com/games/wordle/index.html) by Josh Wardle. 
 
+It was my first personal UI project, and is made entirely with HTML, CSS, and JavaScript.
+
 ### Rules
 In this version, you are given a color (at the top of the screen), and you are required to guess the RGB values of the color (between 0 and 255). Once you get within 5 of the correct value, your guess turns yellow; guessing it exactly turns it green. After each guess, the remaining three boxes are filled with your guess color, the target color, and the euclidean distance between the two colors respectively.
 
